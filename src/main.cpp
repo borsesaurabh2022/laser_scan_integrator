@@ -249,7 +249,7 @@ class scanMerger : public rclcpp::Node
         this->declare_parameter<float>("robotLeftEnd");
     }
     void refresh_params(){
-        this->get_parameter_or<std::string>("integratedTopic", integratedTopic_, "/robotino3base1/scan");
+        this->get_parameter_or<std::string>("integratedTopic", integratedTopic_, "/robotinobase1/scan");
         this->get_parameter_or<std::string>("integratedFrameId", integratedFrameId_, "laser_link");
         this->get_parameter_or<std::string>("scanTopic1",topic1_ ,"/robotino/SickLaser_Front_Remaped");
         this->get_parameter_or<float>("laser1XOff",laser1XOff_, 0.0);
